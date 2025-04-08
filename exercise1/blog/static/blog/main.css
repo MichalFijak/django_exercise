@@ -1,0 +1,131 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background: radial-gradient(circle, #2c2f33, #23272a, #1a1d21); /* Muted gradient */
+    color: #e0e0e0; /* Softer white */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(90deg, #23272a, #2c2f33);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+    border-bottom: 1px solid #3a3d42;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: #d4af37; /* Muted gold */
+    text-shadow: 0 0 5px #d4af37, 0 0 10px #d4af37;
+}
+
+.nav-link {
+    font-size: 1rem;
+    color: #e0e0e0;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #80d4ff; /* Soft cyan */
+    text-shadow: 0 0 5px #80d4ff, 0 0 10px #80d4ff;
+}
+
+/* Main Content */
+main {
+    background: rgba(35, 39, 42, 0.9); /* Muted dark gray */
+    border: 1px solid #3a3d42;
+    color: #e0e0e0;
+    padding: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+main h1 {
+    font-size: 2.5rem;
+    color: #d4af37;
+    text-shadow: 0 0 5px #d4af37, 0 0 10px #d4af37;
+}
+
+main p {
+    font-size: 1.1rem;
+    color: #c0c0c0;
+}
+
+/* Sidebar */
+aside {
+    background: rgba(35, 39, 42, 0.9);
+    border: 1px solid #3a3d42;
+    color: #e0e0e0;
+    padding: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+aside h2 {
+    font-size: 1.5rem;
+    color: #80d4ff;
+    text-shadow: 0 0 5px #80d4ff, 0 0 10px #80d4ff;
+    margin-bottom: 1rem;
+}
+
+aside ul {
+    padding: 0;
+    list-style: none;
+}
+
+aside ul li {
+    margin-bottom: 0.5rem;
+}
+
+aside ul li a {
+    color: #ff7f50; /* Muted coral */
+    font-size: 0.95rem;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+aside ul li a:hover {
+    color: #66c2ff; /* Soft blue */
+    text-shadow: 0 0 5px #66c2ff, 0 0 10px #66c2ff;
+}
+
+/* Utility Classes */
+.shadow-sm {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.rounded {
+    border-radius: 0.25rem;
+}
+
+.text-muted {
+    color: #b0b0b0 !important;
+}
+
+.text-decoration-none {
+    text-decoration: none !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main, aside {
+        margin-bottom: 1rem;
+    }
+}
+
+.blog-background
+{
+    background: radial-gradient(circle, #2c2f33, #23272a, #1a1d21);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+.blog-sidebar-background
+{
+    background: rgba(35, 39, 42, 0.9);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
