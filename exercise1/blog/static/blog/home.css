@@ -1,0 +1,49 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem;
+}
+
+.card {
+    border: 1px solid #ff7f50;;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: rgba(35, 39, 42, 0.9);}
+
+.card-body {
+    padding: 1.5rem;
+    background-color: rgba(35, 39, 42, 0.9);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+    color: #fafafa;
+    text-shadow: 0 0 5px #80d4ff, 0 0 10px #80d4ff;
+}
+
+.card-subtitle {
+    font-size: 0.875rem;
+    color: #6c757d;
+    margin-bottom: 1rem;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #e2e8ec;
+    text-shadow: 0 0 5px #66c2ff, 0 0 10px #66c2ff;
+    line-height: 1.5;
+}

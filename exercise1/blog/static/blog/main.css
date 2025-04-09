@@ -20,7 +20,6 @@ body {
     font-weight: bold;
     font-size: 1.8rem;
     color: #d4af37; /* Muted gold */
-    text-shadow: 0 0 5px #d4af37, 0 0 10px #d4af37;
 }
 
 .nav-link {
