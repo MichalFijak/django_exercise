@@ -1,5 +1,4 @@
 {% extends "blog/base.html" %}
-
 {% with title="Home" %}
 {% block content %}
 <div class="text-center mb-4">
@@ -10,10 +9,13 @@
     {% for post in posts %}
         <div class="col-md-6 mb-4">
             <div class="card">
-                <div class="card-body">
-                    <h2 class="card-title">{{ post.title }}</h2>
-                    <h6 class="card-subtitle mb-2 text-muted">By {{ post.author }} on {{ post.date_posted|date:"F d, Y" }}</h6>
-                    <p class="card-text">{{ post.content }}</p>
+                <div class="card-body d-flex align-items-start">
+                    <img class="rounded-circle me-3" src="{{ post.author.profile.image.url }}" alt="{{ post.title }}" style="width: 100px; height: 100px;">
+                    <div>
+                        <h2 class="card-title">{{ post.title }}</h2>
+                        <h6 class="card-subtitle mb-2 text-muted">By {{ post.author }} on {{ post.date_posted|date:"F d, Y" }}</h6>
+                        <p class="card-text">{{ post.content }}</p>
+                    </div>
                 </div>
             </div>
         </div>
