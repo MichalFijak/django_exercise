@@ -62,19 +62,19 @@
         </div>
     </nav>
     <div class="container my-4">
-        <div class="row">
+        <div class="row d-flex">
             <!-- Main Content -->
             <main class="col-md-8 p-4 rounded blog-background shadow-sm">
-                {% if messages %}
-                    {% for message in messages %}
-                        <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
-                            {{ message }}
-                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                    {% endfor %}
-                        </div>
-                {% endif %}
-                {% block content %}
-                {% endblock %}
+            {% if messages %}
+                {% for message in messages %}
+                    <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+                        {{ message }}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                {% endfor %}
+                    </div>
+            {% endif %}
+            {% block content %}
+            {% endblock %}
             </main>
             <!-- Sidebar -->
             <aside class="col-md-4 p-4 blog-sidebar-background rounded shadow-sm">
@@ -86,6 +86,7 @@
                     <li><a href="#" class="text-decoration-none">About the Author</a></li>
                 </ul>
             </aside>
+        </div>
         </div>
     </div>
     <!-- Bootstrap JS and Popper.js -->
